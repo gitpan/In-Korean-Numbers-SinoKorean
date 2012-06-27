@@ -1,6 +1,6 @@
 --- #YAML:1.0
 name:               In-Korean-Numbers-SinoKorean
-version:            0.01
+version:            0.02
 abstract:           Convert integers to Sino-Korean text (in Hangul) and vice versa.
 author:
     - Bryan Smith <bryan@cpan.org>
