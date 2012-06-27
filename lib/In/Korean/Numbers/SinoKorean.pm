@@ -4,7 +4,7 @@ use POSIX;
 use strict;
 use warnings;
 
-our $VERSION = '0.03'; # Also update POD version below
+our $VERSION = '0.04'; # Also update POD version below
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 
@@ -199,7 +199,7 @@ In::Korean::Numbers::SinoKorean - Convert integers to Sino-Korean text (in Hangu
 
 =head1 VERSION
 
-Version 0.03
+Version 0.04
 
 =cut
 
@@ -210,11 +210,11 @@ Version 0.03
     # Object-oriented API
     my $sk     = In::Korean::Numbers::SinoKorean->new();
     my $hangul = $sk->getHangul( 42 ); # 사십이
-    my $int    = $sk->getHangul( '백이십삼' ); # 123
+    my $int    = $sk->getInt( '백이십삼' ); # 123
     
     # Procedural API
     $hangul = In::Korean::Numbers::SinoKorean::getHangul( 42 ); # 사십이
-    $int = In::Korean::Numbers::SinoKorean::getHangul( '백이십삼' ); # 123
+    $int = In::Korean::Numbers::SinoKorean::getInt( '백이십삼' ); # 123
     
 =head1 SUBROUTINES/METHODS
 
@@ -234,7 +234,7 @@ Given a positive integer, returns string for Sino-Korean (as Hangul).
 
 Given a positive integer in Sino-Korean (as Hangul), returns number.
 
-    my $int = $sk->getHangul( '백이십삼' ); # 123
-    $int = In::Korean::Numbers::SinoKorean::getHangul( '백이십삼' ); # 123
+    my $int = $sk->getInt( '백이십삼' ); # 123
+    $int = In::Korean::Numbers::SinoKorean::getInt( '백이십삼' ); # 123
 
 =cut
