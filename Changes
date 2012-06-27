@@ -3,4 +3,7 @@ Revision history for In-Korean-Numbers
 0.01    Date/time
         First version, released on an unsuspecting world.
 
-0.02    Use Unicode strings to represent Hangul characters.
+0.02    Use Unicode hexcodes to represent Hangul in module & test.
+
+0.03    Changes to POD documentation to show Hangul using UTF8.
+        Reverted test so using utf8 characters for Hangul for readability.
